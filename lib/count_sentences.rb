@@ -17,7 +17,7 @@ class String
   def count_sentences
     split_sentence = []
     if self.include?(".") || self.include?("?") || self.include?("!")
-      split_sentence << self.split(".").uniq!
+      split_sentence << self.split(".").uniq
       split_sentence << self.split("?").uniq!
       split_sentence << self.split("!").uniq!
       split_sentence.count
