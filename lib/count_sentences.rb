@@ -15,6 +15,9 @@ class String
   end
 
   def count_sentences
+    split_sentence = []
+    split_sentence << self.split(.,?,!).uniq!
+    split_sentence.count
 
   end
 end
