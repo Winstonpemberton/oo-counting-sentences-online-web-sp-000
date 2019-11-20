@@ -21,7 +21,7 @@ class String
     #   split_sentence << self.split("?").uniq!
     #   split_sentence << self.split("!").uniq!
     #   split_sentence.count
-     split(/\.|\?|!/).length
+     split(/\.|\?|!/).uniq!.length
 
 
   end
